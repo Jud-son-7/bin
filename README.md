@@ -1,0 +1,2 @@
+# bin
+Self crushing bin.
