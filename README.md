@@ -34,9 +34,9 @@ smart-bin/
 
 | Folder | What it contains | Owner |
 | --- | --- | --- |
-| `firmware/` | Sensors, compactor control, state machine, networking | _TBD_ |
-| `backend/` | Telemetry ingest, alert logic, API, DB | _TBD_ |
-| `app/` | Bin list/map, bin detail, alerts, history | _TBD_ |
+| `firmware/` | Sensors, compactor control, state machine, networking | Tino |
+| `backend/` | Telemetry ingest, alert logic, API, DB | Yifan |
+| `app/` | Bin list/map, bin detail, alerts, history | Rey |
 | `contract/`, `docs/` | Shared interface and documentation | All (changes need everyone's approval) |
 
 ## The contract
@@ -131,12 +131,6 @@ The compactor is a crushing mechanism. Safety is enforced **in firmware**, never
 
 Details are in [`docs/safety.md`](docs/safety.md). Any change to compaction logic must be reviewed with this document.
 
-## Development workflow
-
-- `main` is always working. Do all work on branches named by area, e.g. `fw/compactor-state-machine`, `backend/alert-rules`, `app/bin-list`.
-- Open a pull request for every change. The owner of the affected folder reviews it.
-- CI runs per folder: firmware compile and unit tests, backend tests, app build.
-- Never commit secrets. Use `.env.example` / `secrets.example.h` templates.
 
 ## Roadmap
 
@@ -147,14 +141,3 @@ Details are in [`docs/safety.md`](docs/safety.md). Any change to compaction logi
 - [ ] Integration testing with real hardware
 - [ ] OTA updates, power optimisation, enclosure/weatherproofing
 
-## Team
-
-| Name | Role |
-| --- | --- |
-| _TBD_ | Firmware |
-| _TBD_ | Backend |
-| _TBD_ | App |
-
-## Licence
-
-_TBD_
