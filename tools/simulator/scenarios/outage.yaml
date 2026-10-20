@@ -1,0 +1,22 @@
+# A bin goes quiet for 3 minutes (Wi-Fi drop / crash) then comes back.
+# Use this to test the backend's "offline" detection.
+name: outage
+publish_interval_s: 10
+duration_s: 0
+
+defaults:
+  fill_rate_pct_per_min: 15
+  compact_duration_s: 8
+
+bins:
+  - id: bin-001
+  - id: bin-002
+
+events:
+  - at_s: 60
+    bin: bin-002
+    action: silence
+    duration_s: 180
+  - at_s: 400
+    bin: bin-001
+    action: empty

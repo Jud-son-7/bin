@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "smart-bin/telemetry.schema.json",
+  "title": "Smart Bin telemetry",
+  "description": "Message a bin publishes to bins/<bin_id>/telemetry. This schema is the source of truth: firmware, backend and simulator must all match it.",
+  "type": "object",
+  "required": ["bin_id", "state", "compactions_since_empty", "weight"],
+  "additionalProperties": false,
+  "properties": {
+    "bin_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{2,31}$",
+      "description": "Unique bin identifier, lowercase letters, digits and hyphens (e.g. bin-014). Must match the <bin_id> in the topic."
+    },
+    "state": {
+      "type": "string",
+      "enum": ["idle", "compacting", "full"],
+      "description": "idle = waiting, compacting = crush cycle in progress, full = contents can no longer be compressed and the bin needs emptying."
+    },
+    "compactions_since_empty": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of compaction cycles completed since the bin was last emptied. Resets to 0 when emptied."
+    },
+    "weight": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 500,
+      "description": "Current contents weight in kilograms (1 decimal place is plenty)."
+    }
+  }
+}

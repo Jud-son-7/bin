@@ -1,0 +1,17 @@
+# Quick demo for development: one bin that reaches "full" in a few minutes of real time.
+name: fast_demo
+publish_interval_s: 5
+duration_s: 0
+
+defaults:
+  fill_rate_pct_per_min: 40
+  compact_duration_s: 5
+
+bins:
+  - id: bin-001
+
+events:
+  # staff empty the bin after 8 minutes so you can see it reset
+  - at_s: 480
+    bin: bin-001
+    action: empty

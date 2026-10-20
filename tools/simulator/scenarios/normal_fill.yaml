@@ -1,0 +1,8 @@
+# One bin filling at a realistic pace. Runs until Ctrl+C.
+# Expect roughly: idle -> compacting -> idle ... -> full after ~10 compactions.
+name: normal_fill
+publish_interval_s: 30
+duration_s: 0
+
+bins:
+  - id: bin-001
