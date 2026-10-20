@@ -47,14 +47,10 @@ Example message:
 
 ```json
 {
-  "bin_id": "bin-014",
-  "ts": 1760000000,
-  "fill_pct": 82,
-  "weight_kg": 11.4,
-  "state": "idle",
-  "compactions_since_empty": 6,
-  "battery_v": 3.92,
-  "rssi": -67
+  "bin_id": "bin-067",
+  "state": "full",
+  "compactions_since_empty": 10,
+  "weight": 21.8
 }
 ```
 
