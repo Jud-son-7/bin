@@ -114,7 +114,7 @@ cd tools/simulator
 python simulate.py --scenario scenarios/normal_fill.yaml
 ```
 
-Scenarios cover normal fill cycles, jams, a bin going offline, and low battery.
+Scenarios cover normal fill cycles and bin going offline.
 
 ## Safety
 
