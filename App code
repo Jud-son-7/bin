@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en-AU"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"C","B":"20261020-23-a6cdbfa","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Cairo":"YAFdtXpDzlQ,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Open Sans":"YAFdJt8dAY0,1","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","STIX Two Text":"YAHO2joycuk,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/05db820ba1544614.telemetry_sdk.js" integrity="sha512-a7JzkQDDcioSXpM61nxTfeRW7PcxWQy5+BrhyeTFmQFsXJ+Gncm0y50u7fTA7qOPegFnRgqCfa0mGUOK1yjDWQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bin Watch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&amp;family=Fraunces:wght@600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#18352e;--muted:#62736d;--cream:#f5f4ed;--line:#dce3db;--green:#176548;--yellow:#a76506;--red:#af3430}
+    *{box-sizing:border-box}body{font-family:"Work Sans",sans-serif;color:var(--ink);margin:0}
+    h1,h2{font-family:"Fraunces",serif}.app-shell{width:100%;min-height:100%;background:var(--cream)}
+    .site-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));gap:14px}
+    .card{border:1px solid var(--line);background:white;border-radius:18px;padding:18px;box-shadow:0 7px 26px #18352e08}
+    .field{width:100%;border:1px solid #c6d3ca;border-radius:11px;background:white;padding:11px 12px;color:var(--ink)}
+    .field:focus,.action:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #76bb94;outline-offset:2px}
+    .action{border-radius:11px;padding:11px 15px;font-weight:700;min-height:44px}
+    .pill{display:inline-flex;align-items:center;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:800}
+    .normal{color:#145b41;background:#e1f3e8}.approaching{color:#794900;background:#fff0c8}.ready{color:#982c29;background:#ffe4df}
+    .bar{height:9px;border-radius:99px;background:#e9ede7;overflow:hidden}.bar>span{display:block;height:100%;border-radius:99px;transition:width .3s}
+    .overlay{position:fixed;inset:0;z-index:20;background:#10251c99;display:flex;align-items:center;justify-content:center;padding:16px}
+    .overlay[hidden],[hidden]{display:none!important}.dialog{width:min(100%,560px);max-height:calc(90 * min(var(--vh,1vh),1vh));overflow:auto;border-radius:22px;background:#fbfcf8;padding:22px;box-shadow:0 30px 90px #10251c55}
+    .toast{border-radius:12px;padding:12px 15px}.rise{animation:rise .45s both}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.dialog{padding:17px}.mobile-stack{flex-direction:column;align-items:stretch!important}.mobile-stack>*{width:100%}}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/570d53629f0b998d.data_sdk.js" type="text/javascript" integrity="sha512-JEN39+V+Nvv9ZZOVS8vNk1iA9ErZJHTdgOw9KzPuMiK7m0I+KPEr/wmTnCFIQVsDjCZgJWfGnFi1IQh2Io2qyA=="></script>
+  <script src="/_sdk/db66093cb381f1f2.editing_sdk.js" type="text/javascript" integrity="sha512-MUdKvZD5R1IsHVPp6zKD+bfka7VwdSf6TyTEN+5mEgjM4bQMZXpCx1g65Eg9hyXkRIv02fdpcGcwtMcmH7tpOA=="></script>
+  <script src="/_sdk/03eb2403dcb2c820.resizing_sdk.js" type="text/javascript" integrity="sha512-3rStQpeHJ9SpUz/tPWj3qoOTc5Wdb4M77IFGFVtMTQ/GLbCg6/OVP+yWZaTo/YDzpJdLk+FvEXzvR4ZNQQ4/HQ=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(245, 244, 237);">
+  <div class="app-shell">
+   <header data-template-id="top-header" class="canva-header w-full text-white" style="background: rgb(24, 62, 49);">
+    <div class="max-w-6xl mx-auto px-5 py-7 md:py-9">
+     <div class="flex flex-wrap justify-between items-start gap-5">
+      <div>
+       <p data-template-id="eyebrow" class="canva-text uppercase tracking-[.2em] font-bold mb-2" style="color: rgb(168, 223, 188); font-weight: 700; font-style: normal; font-size: 11px;">SITE OPERATIONS  /  WASTE MONITORING</p>
+       <h1 data-template-id="page-title" class="canva-text leading-tight font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">Bin Watch</h1>
+       <p data-template-id="page-subtitle" class="canva-text mt-2" style="color: rgb(213, 232, 219); font-weight: 400; font-style: normal; font-size: 16px;">Know what needs collecting, and where.</p>
+      </div>
+      <div class="flex gap-2 flex-wrap"><button type="button" id="notifications-open" data-template-id="notifications-button" class="canva-button action border border-white/40" style="background: rgb(39, 84, 64); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Notifications</button> <span id="unread-count" class="self-center rounded-full bg-amber-300 text-green-950 px-2 py-1 text-xs font-bold" aria-live="polite" hidden=""></span> <button type="button" id="add-open" data-template-id="add-button" class="canva-button action" style="background: rgb(225, 237, 172); color: rgb(24, 62, 49); font-weight: 400; font-style: normal; font-size: 16px;">+ Add bin</button>
+      </div>
+     </div>
+     <div class="grid grid-cols-3 gap-3 mt-8">
+      <div class="rounded-xl bg-white/10 p-3">
+       <p data-template-id="total-label" class="canva-text text-sm" style="color: rgb(225, 240, 228); font-weight: 400; font-style: normal; font-size: 16px;">Total bins</p><strong id="total-count" class="text-2xl" aria-live="polite">—</strong>
+      </div>
+      <div class="rounded-xl bg-white/10 p-3">
+       <p data-template-id="approaching-label" class="canva-text text-sm" style="color: rgb(225, 240, 228); font-weight: 400; font-style: normal; font-size: 16px;">Approaching</p><strong id="approaching-count" class="text-2xl">—</strong>
+      </div>
+      <div class="rounded-xl bg-white/10 p-3">
+       <p data-template-id="ready-label" class="canva-text text-sm" style="color: rgb(225, 240, 228); font-weight: 400; font-style: normal; font-size: 16px;">Ready to collect</p><strong id="ready-count" class="text-2xl">—</strong>
+      </div>
+     </div>
+    </div>
+   </header>
+   <main class="w-full max-w-6xl mx-auto px-5 py-7 md:py-10">
+    <div class="flex flex-wrap justify-between gap-4 items-end mb-6">
+     <div>
+      <h2 data-template-id="dashboard-heading" class="canva-text font-bold" style="color: rgb(24, 53, 46); font-weight: 700; font-style: normal; font-size: 24px;">Across your sites</h2>
+      <p data-template-id="dashboard-subtitle" class="canva-text mt-1" style="color: rgb(98, 115, 109); font-weight: 400; font-style: normal; font-size: 16px;">Live readings and collection priorities, grouped by location.</p>
+     </div>
+     <div class="flex gap-2 flex-wrap">
+      <div>
+       <label for="location-filter" data-template-id="location-filter-label" class="canva-text block text-xs font-bold mb-1" style="color: rgb(64, 87, 77); font-weight: 400; font-style: normal; font-size: 16px;">LOCATION</label><select id="location-filter" class="field min-w-36"><option value="">All locations</option></select>
+      </div>
+      <div>
+       <label for="status-filter" data-template-id="status-filter-label" class="canva-text block text-xs font-bold mb-1" style="color: rgb(64, 87, 77); font-weight: 400; font-style: normal; font-size: 16px;">STATUS</label><select id="status-filter" class="field min-w-36"><option value="">All statuses</option><option value="normal">Normal</option><option value="approaching">Approaching</option><option value="ready">Ready for collection</option></select>
+      </div>
+     </div>
+    </div>
+    <div id="feedback" class="toast mb-5 bg-amber-50 text-amber-900" role="status" aria-live="polite">
+     Loading saved bins…
+    </div><button id="retry-button" type="button" data-template-id="retry-button" class="canva-button action mb-5 hidden" style="background: rgb(23, 101, 72); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Retry loading</button>
+    <div id="site-list" class="space-y-8"></div>
+    <p id="empty-view" data-template-id="empty-view" class="canva-text text-center py-14 hidden" style="color: rgb(98, 115, 109); font-weight: 400; font-style: normal; font-size: 16px;">No bins match these filters. Try another view or add a bin.</p>
+   </main>
+   <footer class="max-w-6xl mx-auto px-5 pb-8">
+    <p data-template-id="footer-note" class="canva-text text-sm" style="color: rgb(98, 115, 109); font-weight: 400; font-style: normal; font-size: 16px;">A cleaner alert is created when a reading crosses above its bin’s threshold.</p>
+   </footer>
+  </div>
+  <div id="form-overlay" class="overlay" hidden="">
+   <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="form-heading">
+    <div class="flex justify-between items-center mb-5">
+     <h2 id="form-heading" data-template-id="form-heading" class="canva-text font-bold" style="color: rgb(24, 53, 46); font-weight: 700; font-style: normal; font-size: 24px;">Bin information</h2><button type="button" class="close-dialog action" aria-label="Close">✕</button>
+    </div>
+    <form id="bin-form" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+     <div>
+      <label data-template-id="bin-code-label" class="canva-text block text-sm font-bold mb-1" for="bin-code" style="color: rgb(24, 53, 46); font-weight: 400; font-style: normal; font-size: 16px;">Bin name or ID</label><input id="bin-code" class="field" required="" maxlength="40">
+     </div>
+     <div>
+      <label data-template-id="site-label" class="canva-text block text-sm font-bold mb-1" for="site" style="color: rgb(24, 53, 46); font-weight: 400; font-style: normal; font-size: 16px;">Site / location</label><input id="site" class="field" required="" maxlength="70">
+     </div>
+     <div class="sm:col-span-2">
+      <label data-template-id="exact-location-label" class="canva-text block text-sm font-bold mb-1" for="exact-location" style="color: rgb(24, 53, 46); font-weight: 400; font-style: normal; font-size: 16px;">Exact bin location</label><input id="exact-location" class="field" required="" maxlength="110">
+     </div>
+     <div>
+      <label data-template-id="cleaner-label" class="canva-text block text-sm font-bold mb-1" for="cleaner" style="color: rgb(24, 53, 46); font-weight: 400; font-style: normal; font-size: 16px;">Assigned cleaner</label><input id="cleaner" class="field" required="" maxlength="70">
+     </div>
+     <div>
+      <label data-template-id="weight-label" class="canva-text block text-sm font-bold mb-1" for="weight" style="color: rgb(24, 53, 46); font-weight: 400; font-style: normal; font-size: 16px;">Current weight (kg)</label><input id="weight" class="field" type="number" min="0" step="0.01" required="">
+     </div>
+     <div>
+      <label data-template-id="threshold-label" class="canva-text block text-sm font-bold mb-1" for="threshold" style="color: rgb(24, 53, 46); font-weight: 400; font-style: normal; font-size: 16px;">Alert threshold (kg)</label><input id="threshold" class="field" type="number" min="0.01" step="0.01" required="">
+     </div>
+     <div>
+      <label data-template-id="capacity-label" class="canva-text block text-sm font-bold mb-1" for="capacity" style="color: rgb(24, 53, 46); font-weight: 400; font-style: normal; font-size: 16px;">Capacity (kg)</label><input id="capacity" class="field" type="number" min="0.01" step="0.01" required="">
+     </div>
+     <p data-template-id="threshold-help" class="canva-text sm:col-span-2 text-sm" style="color: rgb(98, 115, 109); font-weight: 400; font-style: normal; font-size: 16px;">An alert is sent when the reading exceeds the threshold. The threshold cannot exceed capacity.</p>
+     <div class="sm:col-span-2 flex gap-2 justify-end mobile-stack"><button type="button" data-template-id="cancel-button" class="canva-button close-dialog action border border-slate-300" style="background: rgb(237, 241, 233); color: rgb(24, 53, 46); font-weight: 400; font-style: normal; font-size: 16px;">Cancel</button> <button type="submit" id="save-bin" data-template-id="save-button" class="canva-button action" style="background: rgb(23, 101, 72); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Save bin</button>
+     </div>
+    </form>
+   </section>
+  </div>
+  <div id="detail-overlay" class="overlay" hidden="">
+   <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="detail-heading">
+    <div class="flex justify-between items-center mb-4">
+     <h2 id="detail-heading" class="font-bold text-2xl"></h2><button type="button" class="close-dialog action" aria-label="Close">✕</button>
+    </div>
+    <div id="detail-content" class="space-y-3 mb-6"></div>
+    <form id="reading-form" class="border-t pt-5"><label data-template-id="new-reading-label" for="new-reading" class="canva-text block font-bold mb-2" style="color: rgb(24, 53, 46); font-weight: 400; font-style: normal; font-size: 16px;">Update weight reading (kg)</label>
+     <div class="flex gap-2 mobile-stack">
+      <input id="new-reading" class="field" type="number" min="0" step="0.01" required=""><button type="submit" data-template-id="update-reading-button" class="canva-button action whitespace-nowrap" style="background: rgb(23, 101, 72); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Save reading</button>
+     </div>
+    </form>
+    <div class="flex gap-2 flex-wrap border-t mt-5 pt-5"><button id="edit-bin" type="button" data-template-id="edit-bin-button" class="canva-button action border border-slate-300" style="background: rgb(237, 241, 233); color: rgb(24, 53, 46); font-weight: 400; font-style: normal; font-size: 16px;">Edit bin details</button> <button id="delete-bin" type="button" data-template-id="delete-bin-button" class="canva-button action border border-red-300 text-red-800" style="background: rgb(255, 244, 241); color: rgb(153, 27, 27); font-weight: 400; font-style: normal; font-size: 16px;">Remove bin</button> <button id="confirm-delete" type="button" data-template-id="confirm-delete-button" class="canva-button action hidden" style="background: rgb(175, 52, 48); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Confirm removal</button> <button id="cancel-delete" type="button" data-template-id="cancel-delete-button" class="canva-button action hidden border border-slate-300" style="background: rgb(237, 241, 233); color: rgb(24, 53, 46); font-weight: 400; font-style: normal; font-size: 16px;">Keep bin</button>
+    </div>
+   </section>
+  </div>
+  <div id="notifications-overlay" class="overlay" hidden="">
+   <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="notification-heading">
+    <div class="flex justify-between items-center mb-2">
+     <h2 id="notification-heading" data-template-id="notification-heading" class="canva-text font-bold" style="color: rgb(24, 53, 46); font-weight: 700; font-style: normal; font-size: 24px;">Cleaner notifications</h2><button type="button" class="close-dialog action" aria-label="Close">✕</button>
+    </div>
+    <p data-template-id="notification-help" class="canva-text text-sm mb-5" style="color: rgb(98, 115, 109); font-weight: 400; font-style: normal; font-size: 16px;">Review alerts, mark them read, or mark the collection request handled.</p>
+    <div id="notification-list" class="space-y-3"></div>
+    <p id="no-notifications" data-template-id="no-notifications" class="canva-text py-8 text-center hidden" style="color: rgb(98, 115, 109); font-weight: 400; font-style: normal; font-size: 16px;">No notifications yet. New threshold crossings will appear here.</p>
+   </section>
+  </div>
+  <template id="bin-template">
+   <article data-template-id="bin-card" class="canva-card card rise">
+    <div class="flex justify-between gap-2 items-start">
+     <div>
+      <p class="bin-code font-extrabold text-lg"></p>
+      <p class="bin-detail text-sm mt-1 text-slate-600"></p>
+     </div><span class="bin-status pill"></span>
+    </div>
+    <div class="flex justify-between mt-5 text-sm">
+     <span class="bin-weight font-semibold"></span><span class="bin-percent font-bold"></span>
+    </div>
+    <div class="bar mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+     <span class="bin-bar"></span>
+    </div>
+    <p class="bin-meta text-sm mt-4 text-slate-600"></p><button type="button" data-template-id="view-bin-button" class="canva-button action mt-4 w-full"></button>
+   </article>
+  </template>
+  <template id="notification-template">
+   <article data-template-id="notification-card" class="canva-card card">
+    <div class="flex justify-between gap-2">
+     <strong class="notification-title"></strong><span class="notification-state pill"></span>
+    </div>
+    <p class="notification-message mt-2 text-sm leading-relaxed"></p>
+    <p class="notification-date mt-2 text-xs text-slate-500"></p>
+    <div class="flex gap-2 mt-4 flex-wrap"><button type="button" data-template-id="mark-read-button" class="canva-button action border border-slate-300"></button> <button type="button" data-template-id="mark-handled-button" class="canva-button action"></button>
+    </div>
+   </article>
+  </template>
+  <script>
+(() => {
+  const $ = id => document.getElementById(id);
+  let backendRecords = [], ready = false, activeId = null, editingId = null, loadTimer;
+  const bins = () => backendRecords.filter(r => r.record_type === 'bin');
+  const notices = () => backendRecords.filter(r => r.record_type === 'notification');
+  const get = id => backendRecords.find(r => r.__backendId === id);
+  const text = (node, value) => { const v = String(value); if (node.textContent !== v) node.textContent = v; };
+  const kg = n => `${Number(n).toFixed(1)} kg`;
+  const status = b => Number(b.current_weight) > Number(b.threshold) ? 'ready' : Number(b.current_weight) >= Number(b.threshold) * .8 ? 'approaching' : 'normal';
+  const statusText = {normal:'Normal',approaching:'Approaching threshold',ready:'Ready for collection'};
+  const tone = {normal:'#27825a',approaching:'#bd790e',ready:'#c4433b'};
+  const blank = () => ({record_type:'',bin_code:'',location:'',location_detail:'',current_weight:0,threshold:0,capacity:0,assigned_cleaner:'',last_reading_at:'',notification_bin_code:'',notification_message:'',notification_weight:0,notification_cleaner:'',notification_read:false,notification_handled:false,created_at:''});
+  function feedback(message, error=false) { const el=$('feedback'); text(el,message); el.hidden=!message; el.className='toast mb-5 '+(error?'bg-red-50 text-red-900':'bg-emerald-50 text-emerald-900'); }
+  function fail() { feedback('Could not confirm that change. Refresh the page before trying again.',true); }
+  function pending(button,on) { button.disabled=on; button.style.opacity=on?'.55':''; button.setAttribute('aria-busy',String(on)); }
+  function open(id) { $(id).hidden=false; $(id).querySelector('.close-dialog').focus(); }
+  function closeAll() { document.querySelectorAll('.overlay').forEach(el=>el.hidden=true); }
+  function render() {
+    if (!ready) return;
+    const bs=bins(), ns=notices(), sites=[...new Set(bs.map(b=>b.location))].sort();
+    text($('total-count'),bs.length); text($('approaching-count'),bs.filter(b=>status(b)==='approaching').length); text($('ready-count'),bs.filter(b=>status(b)==='ready').length);
+    const unread=ns.filter(n=>!n.notification_read&&!n.notification_handled).length;
+    text($('unread-count'),`${unread} unread`); $('unread-count').hidden=!unread;
+    const filter=$('location-filter'), selected=filter.value;
+    [...filter.options].slice(1).forEach(o=>o.remove());
+    sites.forEach(site=>filter.add(new Option(site,site)));
+    filter.value=sites.includes(selected)?selected:'';
+    const visible=bs.filter(b=>(!filter.value||b.location===filter.value)&&(!$('status-filter').value||status(b)===$('status-filter').value));
+    const host=$('site-list'), used=new Set();
+    [...new Set(visible.map(b=>b.location))].sort().forEach(site=>{
+      const key='site-'+site;
+      let section=[...host.children].find(el=>el.dataset.site===key);
+      if(!section){section=document.createElement('section');section.dataset.site=key;section.innerHTML='<div class="flex items-baseline gap-3 mb-4"><h3 class="site-title font-bold text-xl"></h3><span class="site-count text-sm text-slate-500"></span></div><div class="site-grid"></div>';host.append(section);}
+      text(section.querySelector('.site-title'),site);
+      const group=visible.filter(b=>b.location===site);
+      text(section.querySelector('.site-count'),`${group.length} ${group.length===1?'bin':'bins'}`);
+      const grid=section.querySelector('.site-grid');
+      group.forEach(b=>{
+        let card=[...host.querySelectorAll('[data-record-id]')].find(el=>el.dataset.recordId===b.__backendId);
+        if(!card){card=$('bin-template').content.firstElementChild.cloneNode(true);card.dataset.recordId=b.__backendId;}
+        if(card.parentElement!==grid)grid.append(card);
+        text(card.querySelector('.bin-code'),b.bin_code);
+        text(card.querySelector('.bin-detail'),b.location_detail);
+        const s=status(b), badge=card.querySelector('.bin-status');text(badge,statusText[s]);badge.className='bin-status pill '+s;
+        text(card.querySelector('.bin-weight'),`${kg(b.current_weight)} of ${kg(b.capacity)}`);
+        const pct=Math.round(Number(b.current_weight)/Math.max(Number(b.capacity),.01)*100);
+        text(card.querySelector('.bin-percent'),`${pct}% full`);
+        card.querySelector('.bar').setAttribute('aria-valuenow',String(Math.min(100,pct)));
+        card.querySelector('.bar').setAttribute('aria-label',`${b.bin_code}: ${pct}% of capacity; ${statusText[s]}`);
+        card.querySelector('.bin-bar').style.width=Math.min(100,Math.max(0,pct))+'%';
+        card.querySelector('.bin-bar').style.background=tone[s];
+        text(card.querySelector('.bin-meta'),`Threshold ${kg(b.threshold)} · ${b.assigned_cleaner}`);
+        used.add(b.__backendId);
+      });
+      host.append(section);
+    });
+    host.querySelectorAll('[data-record-id]').forEach(el=>{if(!used.has(el.dataset.recordId))el.remove();});
+    host.querySelectorAll('[data-site]').forEach(el=>{if(![...new Set(visible.map(b=>'site-'+b.location))].includes(el.dataset.site))el.remove();});
+    $('empty-view').hidden=!!visible.length;
+    renderNotices();
+    if(activeId&&!$('detail-overlay').hidden){const current=get(activeId);if(current)renderDetail(current);else closeAll();}
+  }
+  function renderDetail(b){
+    text($('detail-heading'),b.bin_code);
+    const d=$('detail-content');
+    const lines=[['Status',statusText[status(b)]],['Exact location',`${b.location} · ${b.location_detail}`],['Assigned cleaner',b.assigned_cleaner],['Current weight',kg(b.current_weight)],['Alert threshold',kg(b.threshold)],['Capacity',kg(b.capacity)],['Last reading',b.last_reading_at?new Date(b.last_reading_at).toLocaleString('en-AU'):'Not recorded']];
+    lines.forEach(([label,value],i)=>{let p=d.children[i];if(!p){p=document.createElement('p');p.className='border-b border-slate-200 pb-2 text-sm';d.append(p);}text(p,`${label}: ${value}`);});
+    while(d.children.length>lines.length)d.lastElementChild.remove();
+    if(document.activeElement!==$('new-reading'))$('new-reading').value=b.current_weight;
+  }
+  function renderNotices(){
+    const host=$('notification-list'), all=notices().sort((a,b)=>b.created_at.localeCompare(a.created_at)), ids=new Set(all.map(n=>n.__backendId));
+    all.forEach(n=>{
+      let row=[...host.children].find(el=>el.dataset.id===n.__backendId);
+      if(!row){row=$('notification-template').content.firstElementChild.cloneNode(true);row.dataset.id=n.__backendId;}
+      text(row.querySelector('.notification-title'),`${n.notification_cleaner} · ${n.notification_bin_code}`);
+      text(row.querySelector('.notification-message'),n.notification_message);
+      text(row.querySelector('.notification-date'),n.created_at?new Date(n.created_at).toLocaleString('en-AU'):'');
+      const badge=row.querySelector('.notification-state');
+      text(badge,n.notification_handled?'Handled':n.notification_read?'Read':'Unread');
+      badge.className='notification-state pill '+(n.notification_handled?'normal':n.notification_read?'approaching':'ready');
+      row.querySelector('[data-template-id="mark-read-button"]').hidden=n.notification_read||n.notification_handled;
+      row.querySelector('[data-template-id="mark-handled-button"]').hidden=n.notification_handled;
+      host.append(row);
+    });
+    [...host.children].forEach(row=>{if(!ids.has(row.dataset.id))row.remove();});
+    $('no-notifications').hidden=!!all.length;
+  }
+  const handler={onDataChanged(data){clearTimeout(loadTimer);backendRecords=data;ready=true;$('retry-button').classList.add('hidden');feedback('');render();}};
+  async function initialize(){
+    ready=false;feedback('Loading saved bins…');$('retry-button').classList.add('hidden');
+    clearTimeout(loadTimer);
+    loadTimer=setTimeout(()=>loadError('Could not load saved bins.'),8000);
+    try{const result=await window.dataSdk.init(handler);if(!result.isOk){clearTimeout(loadTimer);loadError('Could not connect to your Canva Sheet.');}}
+    catch(e){clearTimeout(loadTimer);loadError('Could not connect to your Canva Sheet.');}
+  }
+  function loadError(message){feedback(`${message} Select Retry to try again.`,true);$('retry-button').classList.remove('hidden');}
+  async function createNotice(b) {
+    const now=new Date().toISOString();
+    const notice={...blank(),record_type:'notification',bin_code:b.bin_code,notification_bin_code:b.bin_code,notification_weight:Number(b.current_weight),notification_cleaner:b.assigned_cleaner,notification_message:`${b.assigned_cleaner}: take out the garbage from bin ${b.bin_code} at ${b.location}, ${b.location_detail}. Current weight: ${kg(b.current_weight)}; alert threshold: ${kg(b.threshold)}.`,created_at:now};
+    if(backendRecords.length>=999){feedback('The Canva Sheet has reached its 999-record limit; the cleaner alert could not be saved.',true);return false;}
+    const result=await window.dataSdk.create(notice);
+    if(!result.isOk){feedback('The bin change was saved, but the cleaner alert could not be confirmed. Refresh before trying again.',true);return false;}
+    return true;
+  }
+  document.querySelectorAll('.close-dialog').forEach(b=>b.addEventListener('click',closeAll));
+  document.querySelectorAll('.overlay').forEach(el=>el.addEventListener('click',e=>{if(e.target===el)closeAll();}));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAll();});
+  $('retry-button').addEventListener('click',initialize);
+  $('location-filter').addEventListener('change',render);$('status-filter').addEventListener('change',render);
+  $('add-open').addEventListener('click',()=>{editingId=null;$('bin-form').reset();open('form-overlay');$('bin-code').focus();});
+  $('notifications-open').addEventListener('click',()=>open('notifications-overlay'));
+  $('site-list').addEventListener('click',e=>{const button=e.target.closest('[data-template-id="view-bin-button"]');if(!button)return;activeId=button.closest('[data-record-id]').dataset.recordId;const b=get(activeId);if(b){renderDetail(b);open('detail-overlay');}});
+  $('edit-bin').addEventListener('click',()=>{
+    const b=get(activeId);if(!b)return;
+    editingId=activeId;
+    [['bin-code',b.bin_code],['site',b.location],['exact-location',b.location_detail],['cleaner',b.assigned_cleaner],['weight',b.current_weight],['threshold',b.threshold],['capacity',b.capacity]].forEach(([id,value])=>$(id).value=value);
+    closeAll();open('form-overlay');
+  });
+  $('bin-form').addEventListener('submit',async e=>{
+    e.preventDefault();const button=e.submitter||$('save-bin');
+    const entry={bin_code:$('bin-code').value.trim(),location:$('site').value.trim(),location_detail:$('exact-location').value.trim(),assigned_cleaner:$('cleaner').value.trim(),current_weight:Number($('weight').value),threshold:Number($('threshold').value),capacity:Number($('capacity').value)};
+    if(!entry.bin_code||!entry.location||!entry.location_detail||!entry.assigned_cleaner||entry.threshold<=0||entry.capacity<=0||entry.threshold>entry.capacity||entry.current_weight<0){feedback('Complete every field. Threshold must be above zero and no greater than capacity.',true);return;}
+    if(bins().some(b=>b.bin_code.toLowerCase()===entry.bin_code.toLowerCase()&&b.__backendId!==editingId)){feedback('That bin ID already exists. Choose a unique ID.',true);return;}
+    if(!editingId&&backendRecords.length>=999){feedback('The Canva Sheet has reached its 999-record limit.',true);return;}
+    const old=editingId?get(editingId):null;if(editingId&&!old){feedback('This bin is no longer available.',true);return;}
+    const now=new Date().toISOString(), record=old?{...old,...entry,last_reading_at:now}:{...blank(),...entry,record_type:'bin',created_at:now,last_reading_at:now};
+    pending(button,true);
+    try{
+      const result=await(old?window.dataSdk.update(record):window.dataSdk.create(record));
+      if(!result.isOk){fail();return;}
+      closeAll();feedback('Bin saved.');
+      if(entry.current_weight>entry.threshold&&(!old||Number(old.current_weight)<=Number(old.threshold)))if(await createNotice(record))feedback('Bin saved. Cleaner notification created.');
+    }catch(err){fail();}finally{pending(button,false);}
+  });
+  $('reading-form').addEventListener('submit',async e=>{
+    e.preventDefault();const b=get(activeId),button=e.submitter;
+    if(!b)return;const weight=Number($('new-reading').value);if(!Number.isFinite(weight)||weight<0){feedback('Enter a valid non-negative weight.',true);return;}
+    const updated={...b,current_weight:weight,last_reading_at:new Date().toISOString()};
+    pending(button,true);
+    try{
+      const result=await window.dataSdk.update(updated);
+      if(!result.isOk){fail();return;}
+      feedback('Reading saved.');
+      if(weight>Number(b.threshold)&&Number(b.current_weight)<=Number(b.threshold))if(await createNotice(updated))feedback('Reading saved. Cleaner notification created.');
+    }catch(err){fail();}finally{pending(button,false);}
+  });
+  $('delete-bin').addEventListener('click',()=>{ $('delete-bin').hidden=true;$('confirm-delete').classList.remove('hidden');$('cancel-delete').classList.remove('hidden');});
+  $('cancel-delete').addEventListener('click',()=>{ $('delete-bin').hidden=false;$('confirm-delete').classList.add('hidden');$('cancel-delete').classList.add('hidden');});
+  $('confirm-delete').addEventListener('click',async e=>{
+    const b=get(activeId),button=e.currentTarget;if(!b)return;pending(button,true);
+    try{const result=await window.dataSdk.delete(b);if(!result.isOk){fail();return;}closeAll();feedback('Bin removed. Existing notification history remains available.');}
+    catch(err){fail();}finally{pending(button,false);$('delete-bin').hidden=false;button.classList.add('hidden');$('cancel-delete').classList.add('hidden');}
+  });
+  $('notification-list').addEventListener('click',async e=>{
+    const button=e.target.closest('button');if(!button)return;
+    const n=get(button.closest('[data-id]').dataset.id);if(!n)return;
+    const handled=button.matches('[data-template-id="mark-handled-button"]');
+    pending(button,true);
+    try{
+      const result=await window.dataSdk.update({...n,notification_read:true,notification_handled:handled?true:n.notification_handled});
+      if(!result.isOk){fail();return;}feedback(handled?'Notification marked handled.':'Notification marked read.');
+    }catch(err){fail();}finally{pending(button,false);}
+  });
+  initialize();
+})();
+</script>
+ 
+</body></html>
