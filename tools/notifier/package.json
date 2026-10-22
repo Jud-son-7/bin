@@ -1,0 +1,16 @@
+{
+  "name": "bin-notifier",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Sends a Telegram message when a bin turns full (watches Firestore)",
+  "scripts": {
+    "start": "node notify.js",
+    "dry": "DRY_RUN=1 node notify.js",
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "firebase": "^10.14.1"
+  }
+}
