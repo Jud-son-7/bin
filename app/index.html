@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bin Watch</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bin Watch</h1>
+      <span id="conn" class="conn">connecting…</span>
+    </header>
+    <div id="alerts" aria-live="polite"></div>
+    <main>
+      <section>
+        <h2>Needs collection <span id="count-full" class="count">0</span></h2>
+        <div id="full" class="grid"></div>
+      </section>
+      <section>
+        <h2>All bins</h2>
+        <div id="all" class="grid"></div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

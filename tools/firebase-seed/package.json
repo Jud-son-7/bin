@@ -1,0 +1,14 @@
+{
+  "name": "firebase-seed",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Writes fake bins into Firestore so the website can be tested without MQTT or an ESP32",
+  "scripts": {
+    "seed": "node seed.js",
+    "dry-run": "node seed.js --dry-run"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "firebase-admin": "^12.7.0"
+  }
+}

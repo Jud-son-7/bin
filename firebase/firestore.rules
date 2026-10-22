@@ -1,0 +1,18 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Bin status. The website may read it. Nobody can write from a browser.
+    // The Node.js bridge writes with the Admin SDK, which bypasses these rules.
+    match /bins/{binId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Everything else is closed.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
