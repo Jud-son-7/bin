@@ -1,0 +1,16 @@
+{
+  "name": "bin-watch-bridge",
+  "private": true,
+  "version": "0.1.0",
+  "description": "MQTT to Firestore bridge for the smart bins",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dry": "DRY_RUN=1 node index.js"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "firebase-admin": "^12.7.0",
+    "mqtt": "^5.10.1"
+  }
+}
